@@ -1,6 +1,5 @@
 .item_container {
-  max-width: 400px;
-  min-width: 220px;
+  max-width: 300px;
   border-radius: 8px;
   margin: 20px;
   font-family: Polysans, sans-serif;

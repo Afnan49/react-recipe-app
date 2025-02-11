@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import style from "./search.module.css";
 export default function Search({ SetListOfFood }) {
-  const BaseUrl = "https://dummyjson.com/recipes/search";
+  // const BaseUrl = "https://dummyjson.com/recipes/search";
+  const BaseUrl = "https://api.spoonacular.com/recipes/complexSearch";
+  const api_key = "219cc29d10314e1ea8941758ce2d633a";
   let [search, setSearch] = useState("");
 
   const handleChange = (e) => {
@@ -10,9 +12,9 @@ export default function Search({ SetListOfFood }) {
 
   useEffect(() => {
     async function featchFood() {
-      const res = await fetch(`${BaseUrl}?q=${search}&select=name,image`);
+      const res = await fetch(`${BaseUrl}?query=${search}&apiKey=${api_key}`);
       const data = await res.json();
-      SetListOfFood(data.recipes);
+      SetListOfFood(data.results);
     }
     featchFood();
   }, [search]);
