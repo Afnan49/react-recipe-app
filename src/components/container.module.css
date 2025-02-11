@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+}
+.inner_container {
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px;
+}

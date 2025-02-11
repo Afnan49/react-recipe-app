@@ -1,0 +1,33 @@
+.item_container {
+  max-width: 400px;
+  min-width: 220px;
+  border-radius: 8px;
+  margin: 20px;
+  font-family: Polysans, sans-serif;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: #fafafa;
+}
+.item_image {
+  max-width: 100%;
+  height: auto;
+}
+.item_content {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.item_name {
+  font-size: 1em;
+  font-weight: 600;
+  color: #393e46;
+}
+.item_button {
+  background-color: #29bb89;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
